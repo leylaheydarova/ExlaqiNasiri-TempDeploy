@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<!-- EntityFramework Core əlavə edirik -->
+
+	<!-- ASP.NET Core API-ləri (IHttpContextAccessor, IFormFile və s.) istifadə etmək üçün -->
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.19" />
+	</ItemGroup>
+
+	<!-- Core layihələrinə reference -->
+	<ItemGroup>
+		<ProjectReference Include="..\..\Core\ExlaqiNasiri.Application\ExlaqiNasiri.Application.csproj" />
+		<ProjectReference Include="..\..\Core\ExlaqiNasiri.Domain\ExlaqiNasiri.Domain.csproj" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,17 @@
+Proyekt-lə bağlı vacib məqamlar;
+1. Əgər db-də GetSingle və GetAll üçün data tapılmırsa, exception əvəzinə default data göndərilməlidir.
+2. Əgər bir servisdə multiple table olacaqsa, İsDeleted və DeleteData override edib notmapped etməliyik
+ki, db-yə düşməsin. Bu zaman delete və recover endpointleri yazılmır. Lakin 1model üzərində işləyiriksə,
+onda yazılır.
+3. Hədis modelində mənbə adlanan bir property var və onu string olaraq saxlamalıyıq. Və bunun üçün
+many-to-many relationu edərik yeni table aça bilərik.
+4.RESTful Api dizaynina gore HTTP metodlarin(verbs)-GET,POST,PUT,DELETE ve s. - endpointin ne ucun 
+oldugunu gosterir. Ona gore de sorgulari yazarken tekrar sekilde feil yazilmir.
+Yeni ki, meselen Delete/delete-temporarily-blog deyil. Delete/temporarily yaziriq.
+5. Best practice ucun eger collectionun icinin bos olub-olmadigi yoxlamaq isteyirikse, bu zaman Count() 
+deyil, Any() istifade etmeyimiz duzgundur. Cunki, Count() iceride olan elementlerin her birini bir-bir 
+saydigina gore O(n) qeder isleyir ve bu da perfomansa ciddi tesir edib, onu zeiflede biler.
+Lakin Any() istifade eden zaman eger Any ilk elementi gorerse,  collectionun icinin bos olmadigini gorur 
+ve false qaytarir. 
+
+

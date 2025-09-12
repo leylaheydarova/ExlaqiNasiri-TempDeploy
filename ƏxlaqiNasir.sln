@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35514.174
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{C69C99BD-DE26-4B4A-BE2E-6EE176AA18AC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExlaqiNasiri.App", "Presentation\ExlaqiNasiri.App\ExlaqiNasiri.App.csproj", "{B8621BA4-651B-410B-B7B0-DF4FB9769BEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{F8FF09AF-DA45-4CCA-A919-D2CE77131E8C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExlaqiNasiri.Domain", "Core\ExlaqiNasiri.Domain\ExlaqiNasiri.Domain.csproj", "{0E0A90EA-219A-42D9-A289-048F5497AB37}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExlaqiNasiri.Application", "Core\ExlaqiNasiri.Application\ExlaqiNasiri.Application.csproj", "{A7457BB0-480B-4BC2-9CCA-5A1521D69D26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExlaqiNasiri.Persistence", "Infrastructure\ExlaqiNasiri.Persistence\ExlaqiNasiri.Persistence.csproj", "{AFE7BA97-2F2F-4CE1-A9C2-EFB5D814F3B2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExlaqiNasiri.Infrastructure", "Infrastructure\ExlaqiNasiri.Infrastructure\ExlaqiNasiri.Infrastructure.csproj", "{F507A303-5FB7-4AF2-901E-6D4C80DA6CAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{42D478A6-55E9-498C-9C36-DFE64FB3B991}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExlaqiNasiri.Tests.Unit", "tests\ExlaqiNasiri.Tests.Unit\ExlaqiNasiri.Tests.Unit.csproj", "{C54CF178-E282-4616-8F32-F95752432226}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExlaqiNasiri.Mock", "tests\ExlaqiNasiri.Mock\ExlaqiNasiri.Mock.csproj", "{51A397F4-5ACC-4118-AA95-A9B5DCB7C6A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExlaqiNasiri.Tests.Integration", "tests\ExlaqiNasiri.Tests.Integration\ExlaqiNasiri.Tests.Integration.csproj", "{1D917061-4BD4-452B-A9EC-0D5678C4E24E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8621BA4-651B-410B-B7B0-DF4FB9769BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8621BA4-651B-410B-B7B0-DF4FB9769BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8621BA4-651B-410B-B7B0-DF4FB9769BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8621BA4-651B-410B-B7B0-DF4FB9769BEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E0A90EA-219A-42D9-A289-048F5497AB37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E0A90EA-219A-42D9-A289-048F5497AB37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E0A90EA-219A-42D9-A289-048F5497AB37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E0A90EA-219A-42D9-A289-048F5497AB37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7457BB0-480B-4BC2-9CCA-5A1521D69D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7457BB0-480B-4BC2-9CCA-5A1521D69D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7457BB0-480B-4BC2-9CCA-5A1521D69D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7457BB0-480B-4BC2-9CCA-5A1521D69D26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFE7BA97-2F2F-4CE1-A9C2-EFB5D814F3B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFE7BA97-2F2F-4CE1-A9C2-EFB5D814F3B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFE7BA97-2F2F-4CE1-A9C2-EFB5D814F3B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFE7BA97-2F2F-4CE1-A9C2-EFB5D814F3B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F507A303-5FB7-4AF2-901E-6D4C80DA6CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F507A303-5FB7-4AF2-901E-6D4C80DA6CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F507A303-5FB7-4AF2-901E-6D4C80DA6CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F507A303-5FB7-4AF2-901E-6D4C80DA6CAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C54CF178-E282-4616-8F32-F95752432226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C54CF178-E282-4616-8F32-F95752432226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C54CF178-E282-4616-8F32-F95752432226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C54CF178-E282-4616-8F32-F95752432226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51A397F4-5ACC-4118-AA95-A9B5DCB7C6A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51A397F4-5ACC-4118-AA95-A9B5DCB7C6A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51A397F4-5ACC-4118-AA95-A9B5DCB7C6A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51A397F4-5ACC-4118-AA95-A9B5DCB7C6A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D917061-4BD4-452B-A9EC-0D5678C4E24E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D917061-4BD4-452B-A9EC-0D5678C4E24E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D917061-4BD4-452B-A9EC-0D5678C4E24E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D917061-4BD4-452B-A9EC-0D5678C4E24E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B8621BA4-651B-410B-B7B0-DF4FB9769BEB} = {C69C99BD-DE26-4B4A-BE2E-6EE176AA18AC}
+		{0E0A90EA-219A-42D9-A289-048F5497AB37} = {F8FF09AF-DA45-4CCA-A919-D2CE77131E8C}
+		{A7457BB0-480B-4BC2-9CCA-5A1521D69D26} = {F8FF09AF-DA45-4CCA-A919-D2CE77131E8C}
+		{AFE7BA97-2F2F-4CE1-A9C2-EFB5D814F3B2} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{F507A303-5FB7-4AF2-901E-6D4C80DA6CAF} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{C54CF178-E282-4616-8F32-F95752432226} = {42D478A6-55E9-498C-9C36-DFE64FB3B991}
+		{51A397F4-5ACC-4118-AA95-A9B5DCB7C6A4} = {42D478A6-55E9-498C-9C36-DFE64FB3B991}
+		{1D917061-4BD4-452B-A9EC-0D5678C4E24E} = {42D478A6-55E9-498C-9C36-DFE64FB3B991}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2DAB0F49-0A74-4A5C-B0BD-09D175317A6C}
+	EndGlobalSection
+EndGlobal
