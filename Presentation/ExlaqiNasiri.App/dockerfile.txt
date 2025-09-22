@@ -19,4 +19,4 @@ COPY --from=build /app/out ./
 EXPOSE 80
 
 # Container işə düşəndə bunu çalışdır
-ENTRYPOINT ["dotnet", "YourProjectName.dll"]
+ENTRYPOINT ["dotnet", "ExlaqiNasiri.App.dll"]
