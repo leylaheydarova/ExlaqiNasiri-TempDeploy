@@ -2,9 +2,16 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
-# csproj faylını kopyala (tam yol göstəririk)
-COPY Presentation/ExlaqiNasiri.App/ExlaqiNasiri.App.csproj ./ExlaqiNasiri.App.csproj
-RUN dotnet restore ./ExlaqiNasiri.App.csproj
+# copy csproj files first
+COPY ExlaqiNasiri.App/ExlaqiNasiri.App.csproj ./ExlaqiNasiri.App/
+COPY ExlaqiNasiri.Application/ExlaqiNasiri.Application.csproj ./ExlaqiNasiri.Application/
+COPY ExlaqiNasiri.Infrastructure/ExlaqiNasiri.Infrastructure.csproj ./ExlaqiNasiri.Infrastructure/
+COPY ExlaqiNasiri.Persistence/ExlaqiNasiri.Persistence.csproj ./ExlaqiNasiri.Persistence/
+COPY ExlaqiNasiri.Domain/ExlaqiNasiri.Domain.csproj ./ExlaqiNasiri.Domain/
+
+# restore all projects
+RUN dotnet restore ExlaqiNasiri.App/ExlaqiNasiri.App.csproj
+
 
 # Bütün layihəni kopyala
 COPY Presentation/ExlaqiNasiri.App ./ExlaqiNasiri.App
