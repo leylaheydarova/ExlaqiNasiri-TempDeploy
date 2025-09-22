@@ -1,22 +1,20 @@
-# 1. Build mərhələsi (SDK image istifadə olunur)
+# 1. Build mərhələsi
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
-# csproj fayllarını kopyala və dependencies restore et
-COPY *.csproj ./
-RUN dotnet restore
+# csproj faylını kopyala (tam yol göstəririk)
+COPY Presentation/ExlaqiNasiri.App/ExlaqiNasiri.App.csproj ./ExlaqiNasiri.App.csproj
+RUN dotnet restore ./ExlaqiNasiri.App.csproj
 
-# Bütün layihəni kopyala və build et
-COPY . ./
+# Bütün layihəni kopyala
+COPY Presentation/ExlaqiNasiri.App ./ExlaqiNasiri.App
+WORKDIR /app/ExlaqiNasiri.App
 RUN dotnet publish -c Release -o out
 
-# 2. Runtime mərhələsi (yalnız runtime image)
+# 2. Runtime mərhələsi
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
-COPY --from=build /app/out ./
+COPY --from=build /app/ExlaqiNasiri.App/out ./
 
-# API portunu aç
 EXPOSE 80
-
-# Container işə düşəndə bunu çalışdır
 ENTRYPOINT ["dotnet", "ExlaqiNasiri.App.dll"]
