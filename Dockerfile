@@ -3,11 +3,11 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
 # copy csproj files first
-COPY ExlaqiNasiri.App/ExlaqiNasiri.App.csproj ./ExlaqiNasiri.App/
-COPY ExlaqiNasiri.Application/ExlaqiNasiri.Application.csproj ./ExlaqiNasiri.Application/
-COPY ExlaqiNasiri.Infrastructure/ExlaqiNasiri.Infrastructure.csproj ./ExlaqiNasiri.Infrastructure/
-COPY ExlaqiNasiri.Persistence/ExlaqiNasiri.Persistence.csproj ./ExlaqiNasiri.Persistence/
-COPY ExlaqiNasiri.Domain/ExlaqiNasiri.Domain.csproj ./ExlaqiNasiri.Domain/
+COPY Presentation/ExlaqiNasiri.App/ExlaqiNasiri.App.csproj ./ExlaqiNasiri.App/
+COPY Core/ExlaqiNasiri.Application/ExlaqiNasiri.Application.csproj ./ExlaqiNasiri.Application/
+COPY Core/ExlaqiNasiri.Domain/ExlaqiNasiri.Domain.csproj ./ExlaqiNasiri.Domain/
+COPY Infrastructure/ExlaqiNasiri.Infrastructure/ExlaqiNasiri.Infrastructure.csproj ./ExlaqiNasiri.Infrastructure/
+COPY Infrastructure/ExlaqiNasiri.Persistence/ExlaqiNasiri.Persistence.csproj ./ExlaqiNasiri.Persistence/
 
 # restore all projects
 RUN dotnet restore ExlaqiNasiri.App/ExlaqiNasiri.App.csproj
